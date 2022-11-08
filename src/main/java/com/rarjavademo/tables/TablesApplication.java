@@ -8,7 +8,11 @@ public class TablesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TablesApplication.class, args);
-		System.out.println("Project updated");
+
+
+		System.out.println(" The Project start");
+		
+
 	}
 
 }
