@@ -8,7 +8,7 @@ public class TablesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TablesApplication.class, args);
-		System.out.println(" The Project start");
+		System.out.println(" The Project started");
 		
 	}
 
