@@ -10,6 +10,7 @@ public class TablesApplication {
 		SpringApplication.run(TablesApplication.class, args);
 		System.out.println(" The Project start");
 		
+
 	}
 
 }
