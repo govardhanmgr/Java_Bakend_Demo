@@ -1,9 +1,9 @@
 package com.rarjavademo.tables.dto;
 
-import com.rarjavademo.tables.model.EmployeeexpModel;
 
+import com.rarjavademo.tables.model.ManagementexpModel;
 
-public class EmployeeexpDto {
+public class ManagementexpDto {
 	 private Long id;
 	 
 	    private Long employeeid;
@@ -103,30 +103,27 @@ public class EmployeeexpDto {
 		public void setUpdatedby(Long updatedby) {
 			this.updatedby = updatedby;
 		}
-		public static EmployeeexpDto getDto(EmployeeexpModel i){
-			EmployeeexpDto emxdt= new EmployeeexpDto();
-	        emxdt.setId(i.getId());
-	        emxdt.setEmployeeid(i.getEmployeeid());
-	        emxdt.setEntity(i.getEntity());
-	        emxdt.setExpensecode(i.getExpensecode());
-	        emxdt.setExpensedate(i.getExpensedate());
-	        emxdt.setClientcode(i.getClientcode());
-	        emxdt.setAmount(i.getAmount());
-	        emxdt.setApprovedby(i.getApprovedby());
-	        emxdt.setApprovaldate(i.getApprovaldate());
-	        emxdt.setModeofpayment(i.getModeofpayment());
-	        emxdt.setPaymentdate(i.getPaymentdate());
-	        emxdt.setCreationdate(i.getCreationdate());
-	        emxdt.setCreatedby(i.getCreatedby());
-	        emxdt.setUpdatedby(i.getUpdatedby());
+		
+		public static ManagementexpDto getManagementexpDto(ManagementexpModel i) {
+			ManagementexpDto mgxdt = new ManagementexpDto();
+			mgxdt.setId(i.getId());
+			mgxdt.setEmployeeid(i.getEmployeeid());
+			mgxdt.setEntity(i.getEntity());
+			mgxdt.setExpensecode(i.getExpensecode());
+			mgxdt.setExpensedate(i.getExpensedate());
+			mgxdt.setClientcode(i.getClientcode());
+			mgxdt.setAmount(i.getAmount());
+			mgxdt.setApprovedby(i.getApprovedby());
+			mgxdt.setApprovaldate(i.getApprovaldate());
+			mgxdt.setModeofpayment(i.getModeofpayment());
+			mgxdt.setPaymentdate(i.getPaymentdate());
+			mgxdt.setCreationdate(i.getCreationdate());
+			mgxdt.setCreatedby(i.getCreatedby());
+			mgxdt.setUpdatedby(i.getUpdatedby());
 	        
-	        return emxdt;
-	    }
-	  
-
-
-
-
-	    
-
+			
+						return mgxdt;
+		}
+		
+		
 }
