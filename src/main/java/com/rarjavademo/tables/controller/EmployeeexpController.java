@@ -51,9 +51,6 @@ public class EmployeeexpController {
          try {
              exs.saveMyData(emxdt);
 
-
-
-           
          } catch (Exception e) {
              rw.setSuccess(false);
          }
