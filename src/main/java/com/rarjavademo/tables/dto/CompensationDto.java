@@ -84,8 +84,8 @@ public class CompensationDto {
         edt.setOvertimerate(i.getOvertimerate());
         edt.setOvertime(i.getOvertime());
         edt.setPayrate(i.getPayrate());
-        edt.setPaytype(i.getPayrate());
-        edt.setPayschedule(i.getPayrate());
+        edt.setPaytype(i.getPaytype());
+        edt.setPayschedule(i.getPayschedule());
         edt.setCompensationeffectivedate(i.getCompensationeffectivedate());
        
         return edt;
