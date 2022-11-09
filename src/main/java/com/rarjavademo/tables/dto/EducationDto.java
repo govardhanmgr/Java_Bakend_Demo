@@ -1,7 +1,6 @@
 package com.rarjavademo.tables.dto;
 
 import com.rarjavademo.tables.model.EducationModel;
-import com.rarjavademo.tables.model.ExpensesModel;
 
 public class EducationDto {
 	private Long id; 
@@ -61,9 +60,16 @@ public class EducationDto {
 		this.employeeid = employeeid;
 	}
 	 
-	 public static EducationDto getDto(EducationModel i){
-	    	EducationDto edto= new EducationDto();
-	       
-	        return edto;
+	 public static EducationDto getEduDto(EducationModel m){
+	    	EducationDto educationdto= new EducationDto();
+	    	educationdto.setId(m.getId());
+	    	educationdto.setUniversity(m.getUniversity());
+	    	educationdto.setDegreeenddate(m.getDegreeenddate());
+	    	educationdto.setDegreestartdate(m.getDegreestartdate());
+	    	educationdto.setHighestdegree(m.getHighestdegree());
+	    	educationdto.setSpecialization(m.getSpecialization());
+	    	educationdto.setGpa(m.getGpa());
+	    	educationdto.setEmployeeid(m.getEmployeeid());
+	        return educationdto;
 	    }
 }
