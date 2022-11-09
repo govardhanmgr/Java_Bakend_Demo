@@ -16,10 +16,10 @@ import java.util.List;
 public class ExpensesService {
 
     @Autowired
-    ExpensesRepository er;
+    ExpensesRepository pr;
 
     public List<ExpensesDto> getExpRec(){
-        Iterable<ExpensesModel> em = er.findAll();
+        Iterable<ExpensesModel> em = pr.findAll();
         List<ExpensesDto> edto = new ArrayList<>();
         for (ExpensesModel e:em){
             edto.add(ExpensesDto.getDto(e) );
