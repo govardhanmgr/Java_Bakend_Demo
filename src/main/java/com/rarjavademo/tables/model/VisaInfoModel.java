@@ -12,8 +12,7 @@ import javax.persistence.Table;
 
 public class VisaInfoModel {
 
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	
 	@Column(name = "date")
 	private String date;
@@ -54,6 +53,8 @@ public class VisaInfoModel {
 	 @Column(name = "comment")
     private String comment;
     
+	 @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	 @Column(name = "id")
     private Long id;
     
