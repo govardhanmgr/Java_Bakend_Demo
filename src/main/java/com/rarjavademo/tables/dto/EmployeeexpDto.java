@@ -1,7 +1,7 @@
 package com.rarjavademo.tables.dto;
 
 import com.rarjavademo.tables.model.EmployeeexpModel;
-import com.rarjavademo.tables.model.ExpensesModel;
+
 
 public class EmployeeexpDto {
 	 private Long id;
