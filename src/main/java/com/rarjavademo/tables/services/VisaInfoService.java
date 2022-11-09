@@ -27,11 +27,29 @@ public class VisaInfoService {
 	        }
 	        return vidto;
 	    }
+
+	public void saveVisaInfo(VisaInfoDto viinfdto) {
+		VisaInfoModel vim = new VisaInfoModel();
+		vim.setDate(viinfdto.getDate());
+        vim.setVisastatus(viinfdto.getVisastatus());
+        vim.setIssuingcountry(viinfdto.getIssuingcountry());
+        vim.setIssuedate(viinfdto.getIssuedate());
+        vim.setExpirationdate(viinfdto.getExpirationdate());
+        vim.setStatus(viinfdto.getStatus());
+        
+        vim.setPayschedule(viinfdto.getPayschedule());
+        vim.setPayrate(viinfdto.getPayrate());
+        vim.setPaytype(viinfdto.getPaytype());
+        vim.setOvertime(viinfdto.getOvertime());
+        vim.setOvertimerate(viinfdto.getOvertimerate());
+        vim.setChangereason(viinfdto.getChangereason());
+        vim.setComment(viinfdto.getComment());
+        vim.setEmployeeid(viinfdto.getEmployeeid());
+        vim.setId(viinfdto.getId());
+        
+        vir.save(vim);
+	
+	}
 		
 				
-
-
-
-	
-
 }
