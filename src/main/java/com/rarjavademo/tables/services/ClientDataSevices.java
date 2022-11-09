@@ -7,11 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.rarjavademo.tables.dto.ClientdataDto;
-import com.rarjavademo.tables.dto.ExpensesDto;
 import com.rarjavademo.tables.model.ClientdataModel;
-import com.rarjavademo.tables.model.ExpensesModel;
 import com.rarjavademo.tables.repository.ClientdataRepository;
-import com.rarjavademo.tables.repository.ExpensesRepository;
+
 
 @Component
 public class ClientDataSevices {
