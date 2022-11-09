@@ -23,4 +23,18 @@ public class ClientDataSevices {
         }
         return cdto;
     }
+	public void saveMyData(ClientdataDto cdto) {
+
+		 ClientdataModel cm = new ClientdataModel();
+		  cm.setId(cdto.getId());
+	        cm.setClientcode(cdto.getClientcode());
+	        cm.setClientname(cdto.getClientname());
+	        cm.setTaxfederal(cdto.getTaxfederal());
+	        cm.setClientlocation(cdto.getClientlocation());
+	        cm.setAgreementstartdate(cdto.getAgreementstartdate());
+	        cm.setServiceagreementonboarded(cdto.getServiceagreementonboarded());
+	        cm.setAgreementenddate(cdto.getAgreementenddate());
+	        cr.save(cm);
+	        	
+       }
 }
