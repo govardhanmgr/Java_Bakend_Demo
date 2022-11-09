@@ -18,6 +18,7 @@ import com.rarjavademo.tables.services.EmpdataServices;
 public class EmpdataController {
 	@Autowired
     EmpdataServices em;
+	
 	@GetMapping(value = "/getempdata")
     public com.rarjavademo.tables.dto.ResponseWrapper getEmpdata( HttpServletRequest request, HttpServletResponse response){
         com.rarjavademo.tables.dto.ResponseWrapper rw = new com.rarjavademo.tables.dto.ResponseWrapper(true);

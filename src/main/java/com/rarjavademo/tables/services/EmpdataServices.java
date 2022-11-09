@@ -24,7 +24,6 @@ public class EmpdataServices {
 	        List<EmpdataDto> edto = new ArrayList<>();
 	        for (EmpdataModel i:ed){
 	            edto.add(EmpdataDto.getDto(i) );
-
 	        }
 	        return edto;
 	    }

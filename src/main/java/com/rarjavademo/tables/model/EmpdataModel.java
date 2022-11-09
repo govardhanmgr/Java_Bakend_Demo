@@ -12,6 +12,7 @@ import javax.persistence.Table;
 public class EmpdataModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	@Column(name = "employeeid")
 	private Long employeeid;
 	@Column(name = "firstname")
@@ -270,6 +271,7 @@ public class EmpdataModel {
 	public void setAddressline2(String addressline2) {
 		this.addressline2 = addressline2;
 	}
+	
 	public String getCity() {
 		return city;
 	}
