@@ -24,6 +24,34 @@ public class ImgexpServices {
         }
         return edto;
     }
+
+	public void saveMyData(ImgexpDto idto) {
+		// TODO Auto-generated method stub
+		ImgexpModel img=new ImgexpModel();
+		img.setEmployeeid(idto.getEmployeeid());
+		img.setEntity(idto.getEntity());
+		img.setExpensescode(idto.getExpensescode());
+		img.setExpdate(idto.getExpdate());
+		img.setAmount(idto.getAmount());
+		img.setApprovedby(idto.getApprovedby());
+		img.setApprovaldate(idto.getApprovaldate());
+		img.setModeofpayment(idto.getModeofpayment());
+		img.setPaymentdate(idto.getPaymentdate());
+		img.setCreationdate(idto.getCreationdate());
+		img.setCreatedby(idto.getCreatedby());
+		img.setUpdatedby(idto.getUpdatedby());
+		img.setId(idto.getId());
+		
+		er.save(img);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 
 }
