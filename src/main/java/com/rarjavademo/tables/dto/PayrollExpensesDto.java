@@ -7,7 +7,7 @@ public class PayrollExpensesDto {
 	 private Long employeeid;
 	    private String payperiodstartdate;
 	    private String payperiodenddate;
-	    private String epaymentdate;
+	    private String paymentdate;
 	    private Long noofhours;
 	    private Long payrate;
 	    private Long grosspay;
@@ -36,11 +36,11 @@ public class PayrollExpensesDto {
 		public void setPayperiodenddate(String payperiodenddate) {
 			this.payperiodenddate = payperiodenddate;
 		}
-		public String getEpaymentdate() {
-			return epaymentdate;
+		public String getpaymentdate() {
+			return paymentdate;
 		}
-		public void setEpaymentdate(String epaymentdate) {
-			this.epaymentdate = epaymentdate;
+		public void setpaymentdate(String paymentdate) {
+			this.paymentdate = paymentdate;
 		}
 		public Long getNoofhours() {
 			return noofhours;
@@ -108,7 +108,7 @@ public class PayrollExpensesDto {
 		        pdt.setEmployeeid(i.getEmployeeid());
 		        pdt.setPayperiodenddate(i.getPayperiodenddate());
 		        pdt.setPayperiodenddate(i.getPayperiodenddate());
-		        pdt.setEpaymentdate(i.getPaymentdate());
+		        pdt.setpaymentdate(i.getPaymentdate());
 		        pdt.setNoofhours(i.getNoofhours());
 		        pdt.setPayrate(i.getPayrate());
 		        pdt.setGrosspay(i.getGrosspay());
