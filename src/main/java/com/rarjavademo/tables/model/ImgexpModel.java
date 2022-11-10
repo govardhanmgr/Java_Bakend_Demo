@@ -10,32 +10,45 @@ import javax.persistence.Table;
 @Entity
 @Table(name="imgexp")
 public class ImgexpModel {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 @Column(name="employeeid")
 private Long employeeid;
+
 @Column(name="entity")
 private String entity;
+
 @Column(name="expensescode")
 private String expensescode;
+
 @Column(name="expdate")
 private String expdate;
+
 @Column(name="amount")
 private Long amount;
+
 @Column(name="approvedby")
 private Long approvedby;
+
 @Column(name="approvaldate")
 private String approvaldate;
+
 @Column(name="modeofpayment")
 private String modeofpayment;
+
 @Column(name="paymentdate")
 private String paymentdate;
+
 @Column(name="creationdate")
 private String  creationdate;
+
 @Column(name="createdby")
 private Long createdby;
+
 @Column(name="updatedby")
 private Long updatedby;
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
 @Column(name="id")
 private Long id;
 public Long getEmployeeid() {
